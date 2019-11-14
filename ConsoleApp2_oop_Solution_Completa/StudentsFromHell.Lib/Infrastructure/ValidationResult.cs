@@ -3,12 +3,7 @@ using System.Collections.Generic;
 
 namespace Academy.Lib.Infrastructure
 {
-    public class ValidationResult : ValidationResult<Entity>
-    {
-
-    }
-
-    public class ValidationResult<T> where T : Entity
+    public class ValidationResult
     {
         public bool IsSuccess { get; set; }
         public List<string> Errors { get; set; } = new List<string>();
@@ -24,17 +19,6 @@ namespace Academy.Lib.Infrastructure
 
                 return output;
             }
-        }
-
-        public ValidationResult<TOut> Cast<TOut>() where TOut : Entity
-        {
-            var output  = new ValidationResult<TOut>()
-            {
-                IsSuccess = this.IsSuccess,
-                Errors = this.Errors
-            };
-
-            return output;
         }
     }
 }

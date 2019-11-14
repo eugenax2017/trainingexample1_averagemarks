@@ -11,7 +11,7 @@ namespace Academy.Lib.Models
         public override Action<Entity> RepositoryAddAction => (ent) => { DbContext.AddSubject(ent as Subject); };
         public override Action<Entity> RepositoryUpdateAction => (ent) => { DbContext.UpdateSubject(ent as Subject); };
 
-        public void ValidateName(ValidationResult<Entity> validationResult)
+        public void ValidateName(ValidationResult validationResult)
         {
             validationResult.IsSuccess = true;
 
@@ -28,9 +28,9 @@ namespace Academy.Lib.Models
             }           
         }
 
-        public override ValidationResult<Entity> Validate()
+        public override ValidationResult Validate()
         {
-            var validationResult = new ValidationResult<Entity>
+            var validationResult = new ValidationResult
             {
                 IsSuccess = true
             };

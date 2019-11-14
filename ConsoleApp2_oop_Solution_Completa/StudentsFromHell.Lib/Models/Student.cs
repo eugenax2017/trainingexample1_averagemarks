@@ -10,7 +10,7 @@ namespace Academy.Lib.Models
     {
         #region Static Validations
 
-        public static void ValidateDni(ValidationResult<Entity> validationResult, string dni)
+        public static void ValidateDni(ValidationResult validationResult, string dni)
         {
             var vr = ValidateDni(dni);
 
@@ -79,7 +79,7 @@ namespace Academy.Lib.Models
         #region Domain Validations
 
         // Borrar y llevar a Static validations
-        public void ValidateName(ValidationResult<Entity> validationResult)
+        public void ValidateName(ValidationResult validationResult)
         {
             var validateNameResult = ValidateName(this.Name);
             if (!validateNameResult.Item1)

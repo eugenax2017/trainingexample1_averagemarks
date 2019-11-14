@@ -99,10 +99,7 @@ namespace Academy.Lib.Models
 
         public override ValidationResult Validate()
         {
-            var output = new ValidationResult
-            {
-                IsSuccess = true
-            };
+            var output = base.Validate();
 
             // cambiar ValidateName para que sea igual que ValidateDni
             ValidateName(output);

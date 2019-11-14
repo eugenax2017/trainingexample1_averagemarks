@@ -36,6 +36,14 @@ namespace Academy.Lib.Models
             return output;
         }
 
-        public abstract ValidationResult Validate();
+        public virtual ValidationResult Validate()
+        {
+            var output = new ValidationResult()
+            {
+                IsSuccess = true
+            };
+
+            return output;
+        }
     }
 }

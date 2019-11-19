@@ -9,21 +9,10 @@ namespace Academy.Lib.Models
     public class Student : Entity
     {
         #region Static Validations
-
-        public static void ValidateDni(ValidationResult validationResult, string dni)
+               
+        public static ValidationResult<string> ValidateDni(string dni, Guid currentId = default)
         {
-            var vr = ValidateDni(dni);
-
-            if (!vr.IsSuccess)
-            {
-                validationResult.IsSuccess = false;
-                validationResult.Errors.AddRange(vr.Errors);
-            }            
-        }
-
-        public static ValidationResult ValidateDni(string dni)
-        {
-            var output = new ValidationResult()
+            var output = new ValidationResult<string>()
             {
                 IsSuccess = true
             };
@@ -34,27 +23,100 @@ namespace Academy.Lib.Models
                 output.Errors.Add("el dni delalumno no puede estar vacío");
             }
 
-            if(DbContext.StudentsByDni.ContainsKey(dni))
+            #region check duplication
+            var repo = new StudentRepository();
+            var entityWithDni = repo.GetStudentByDni(dni);
+
+            if (currentId == default && entityWithDni != null)
             {
+                // on create
                 output.IsSuccess = false;
                 output.Errors.Add("ya existe un alumno con ese dni");
             }
-            
+            else if (currentId != default && entityWithDni.Id != currentId)
+            {
+                // on update
+                output.IsSuccess = false;
+                output.Errors.Add("ya existe un alumno con ese dni");
+            }
+            #endregion
+
             return output;
         }
 
-        public static Tuple<bool, string> ValidateName(string dni)
+        public static ValidationResult<int> ValidateChairNumber(string chairNumberText)
         {
-            if (string.IsNullOrEmpty(dni))
-                return new Tuple<bool, string>(false, "el nombre delalumno no puede estar vacío");
-            else
-                return new Tuple<bool, string>(true, string.Empty);
+            var output = new ValidationResult<int>()
+            {
+                IsSuccess = true
+            };
+
+            var chairNumber = 0;
+            var isConversionOk = false;
+
+            #region check null or empty
+            if (string.IsNullOrEmpty(chairNumberText))
+            {
+                output.IsSuccess = false;
+                output.Errors.Add("el número de la silla no puede estar vacío o nulo");
+            }
+            #endregion
+
+            #region check format conversion
+
+            isConversionOk = int.TryParse(chairNumberText, out chairNumber);
+
+            if (!isConversionOk)
+            {
+                output.IsSuccess = false;
+                output.Errors.Add($"no se puede convertir {chairNumber} en número");
+            }
+
+            #endregion
+
+            #region check if the char is already in use
+
+            if (isConversionOk)
+            {
+                var repoStudents = new Repository<Student>();
+                var currentStudentInChair = repoStudents.QueryAll().FirstOrDefault(s => s.ChairNumber == chairNumber);
+
+                if (currentStudentInChair != null)
+                {
+                    output.IsSuccess = false;
+                    output.Errors.Add($"ya hay un alumno {currentStudentInChair.Name} en la silla {chairNumber}");
+                }
+            }
+            #endregion
+
+            if (output.IsSuccess)
+                output.ValidatedResult = chairNumber;
+
+            return output;
+        }
+
+        public static ValidationResult<string> ValidateName(string name)
+        {
+            var output = new ValidationResult<string>()
+            {
+                IsSuccess = true
+            };
+
+            if (string.IsNullOrEmpty(name))
+            {
+                output.IsSuccess = false;
+                output.Errors.Add("el nombre delalumno no puede estar vacío");
+            }
+
+            return output;
         }
 
         #endregion
 
         public string Dni { get; set; }
         public string Name { get; set; }
+
+        public int ChairNumber { get; set; }
 
         public List<Exam> Exams
         {
@@ -64,37 +126,48 @@ namespace Academy.Lib.Models
             }
         }
 
-        public override Action<Entity> RepositoryAddAction => (ent) => 
-        {
-            if (CurrentValidation != null && CurrentValidation.IsSuccess)
-                DbContext.AddStudent(ent as Student);
-        };
-
-        public override Action<Entity> RepositoryUpdateAction => (ent) => 
-        {
-            if (CurrentValidation != null && CurrentValidation.IsSuccess)
-                DbContext.UpdateStudent(ent as Student); 
-        };
+        public Guid Guid { get; private set; }
 
         #region Domain Validations
 
-        // Borrar y llevar a Static validations
         public void ValidateName(ValidationResult validationResult)
         {
             var validateNameResult = ValidateName(this.Name);
-            if (!validateNameResult.Item1)
+            if (!validateNameResult.IsSuccess)
             {
                 validationResult.IsSuccess = false;
-                validationResult.Errors.Add(validateNameResult.Item2);
+                validationResult.Errors.AddRange(validateNameResult.Errors);
+            }
+        }
+
+        public void ValidateDni(ValidationResult validationResult)
+        {            
+            var vr = ValidateDni(this.Dni, this.Id);
+
+            if (!vr.IsSuccess)
+            {
+                validationResult.IsSuccess = false;
+                validationResult.Errors.AddRange(vr.Errors);
+            }
+        }
+
+        public void ValidateChairNumber(ValidationResult validationResult)
+        {
+            var vr = ValidateChairNumber(this.ChairNumber.ToString());
+
+            if (!vr.IsSuccess)
+            {
+                validationResult.IsSuccess = false;
+                validationResult.Errors.AddRange(vr.Errors);
             }
         }
 
         #endregion
-               
-        public SaveResult<Student> SaveStudent()
+
+        public SaveResult<Student> Save()
         {            
-            var saveResult = base.Save();
-            return saveResult.Cast<Student>();
+            var saveResult = base.Save<Student>();
+            return saveResult;
         }
 
         public override ValidationResult Validate()
@@ -103,7 +176,8 @@ namespace Academy.Lib.Models
 
             // cambiar ValidateName para que sea igual que ValidateDni
             ValidateName(output);
-            ValidateDni(output, this.Dni);
+            ValidateDni(output);
+            ValidateChairNumber(output);
 
             return output;
         }

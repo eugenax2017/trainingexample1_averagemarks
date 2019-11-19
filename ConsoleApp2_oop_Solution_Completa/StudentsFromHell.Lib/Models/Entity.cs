@@ -1,4 +1,5 @@
-﻿using Academy.Lib.Infrastructure;
+﻿using Academy.Lib.Context;
+using Academy.Lib.Infrastructure;
 using System;
 
 namespace Academy.Lib.Models
@@ -7,27 +8,26 @@ namespace Academy.Lib.Models
     {
         public Guid Id { get; set; }
 
-        public abstract Action<Entity> RepositoryAddAction { get; }
-        public abstract Action<Entity> RepositoryUpdateAction { get; }
-
         public ValidationResult CurrentValidation { get; private set; }
 
-        public virtual SaveResult<Entity> Save()
+        public virtual SaveResult<T> Save<T>() where T : Entity
         {
-            var output = new SaveResult<Entity>();
+            var output = new SaveResult<T>();
 
             CurrentValidation = Validate();
 
             if (CurrentValidation.IsSuccess)
             {
+                var repo = new Repository<T>();
+
                 if (this.Id == Guid.Empty)
                 {
                     this.Id = Guid.NewGuid();
-                    RepositoryAddAction(this);
+                    output = repo.Add(this as T);
                 }
                 else
                 {
-                    RepositoryUpdateAction(this);
+                    output = repo.Update(this as T);
                 }
             }
 

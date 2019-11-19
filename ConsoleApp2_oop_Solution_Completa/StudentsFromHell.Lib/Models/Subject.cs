@@ -8,9 +8,7 @@ namespace Academy.Lib.Models
     {
         public string Name { get; set; }
 
-        public override Action<Entity> RepositoryAddAction => (ent) => { DbContext.AddSubject(ent as Subject); };
-        public override Action<Entity> RepositoryUpdateAction => (ent) => { DbContext.UpdateSubject(ent as Subject); };
-
+        
         public void ValidateName(ValidationResult validationResult)
         {
             validationResult.IsSuccess = true;

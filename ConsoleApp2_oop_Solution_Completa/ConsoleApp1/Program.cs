@@ -110,7 +110,7 @@ namespace ConsoleApp1
                     if (dni == "*")
                         break;
 
-                    ValidationResult vrDni; 
+                    ValidationResult<string> vrDni; 
                     while (!(vrDni = Student.ValidateDni(dni)).IsSuccess)
                     {
                         Console.WriteLine(vrDni.AllErrors);
@@ -129,31 +129,50 @@ namespace ConsoleApp1
                     if (name == "*")
                         break;
 
-                    while (!Student.ValidateName(name))
+                    ValidationResult<string> vrName;
+                    while (!(vrName = Student.ValidateName(name)).IsSuccess)
                     {
-                        Console.WriteLine("el nombre está en formato incorrecto, vuelva a escribirlo");
+                        Console.WriteLine(vrName.AllErrors);
                         name = Console.ReadLine();
                     }
 
                     #endregion
 
-                    var student = new Student
-                    {
-                        Dni = dni,
-                        Name = name
-                    };
+                    #region read chair number
+                    Console.WriteLine("escriba el número de silla:");
+                    var chairNumberText = Console.ReadLine();
 
-                    var sr = student.SaveStudent();
+                    if (chairNumberText == "*")
+                        break;
 
-                    if (sr.IsSuccess)
+                    ValidationResult<int> vrChair;
+                    while (!(vrChair = Student.ValidateChairNumber(chairNumberText)).IsSuccess)
                     {
-                        Console.WriteLine($"alumno guardado correctamente");
+                        Console.WriteLine(vrChair.AllErrors);
+                        chairNumberText = Console.ReadLine();
                     }
-                    else
-                    {
-                        Console.WriteLine($"uno o más errores han ocurrido y el almuno no se guardado correctamente: {sr.AllErrors}");
-                    }                    
 
+                    #endregion
+
+                    if (vrDni.IsSuccess && vrName.IsSuccess && vrChair.IsSuccess)
+                    {
+                        var student = new Student
+                        {
+                            Dni = vrDni.ValidatedResult,
+                            Name = vrName.ValidatedResult,
+                            ChairNumber = vrChair.ValidatedResult
+                        };
+                        
+                        var sr = student.Save(); 
+                        if (sr.IsSuccess)
+                        {
+                            Console.WriteLine($"alumno guardado correctamente");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"uno o más errores han ocurrido y el almuno no se guardado correctamente: {sr.AllErrors}");
+                        }
+                    }
                 }
             }
 

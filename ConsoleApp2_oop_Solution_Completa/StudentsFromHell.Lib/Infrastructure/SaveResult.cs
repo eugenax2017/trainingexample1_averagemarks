@@ -5,13 +5,17 @@ namespace Academy.Lib.Infrastructure
 {
     public class SaveResult<T> where T : Entity
     {
-        public ValidationResult Validation { get; set; }
+        public ValidationResult Validation { get; set; } = new ValidationResult();
 
         public bool IsSuccess
         {
             get
             {
                 return Validation.IsSuccess;
+            }
+            set
+            {
+                Validation.IsSuccess = value;
             }
         }
 

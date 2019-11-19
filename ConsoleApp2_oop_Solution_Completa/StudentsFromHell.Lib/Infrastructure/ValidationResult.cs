@@ -21,4 +21,9 @@ namespace Academy.Lib.Infrastructure
             }
         }
     }
+
+    public class ValidationResult<T> : ValidationResult
+    {
+        public T ValidatedResult { get; set; }
+    }
 }

@@ -41,6 +41,11 @@ namespace Academy.Lib.Models
             }
             #endregion
 
+            if (output.IsSuccess)
+            {
+                output.ValidatedResult = dni;
+            }
+
             return output;
         }
 

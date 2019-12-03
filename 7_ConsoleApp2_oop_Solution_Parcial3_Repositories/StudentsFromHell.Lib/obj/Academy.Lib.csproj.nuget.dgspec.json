@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\ConsoleApp2_oop_Solution_Completa\\StudentsFromHell.Lib\\Academy.Lib.csproj": {}
+    "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\StudentsFromHell.Lib\\Academy.Lib.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\ConsoleApp2_oop_Solution_Completa\\StudentsFromHell.Lib\\Academy.Lib.csproj": {
+    "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\StudentsFromHell.Lib\\Academy.Lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\ConsoleApp2_oop_Solution_Completa\\StudentsFromHell.Lib\\Academy.Lib.csproj",
+        "projectUniqueName": "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\StudentsFromHell.Lib\\Academy.Lib.csproj",
         "projectName": "Academy.Lib",
-        "projectPath": "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\ConsoleApp2_oop_Solution_Completa\\StudentsFromHell.Lib\\Academy.Lib.csproj",
+        "projectPath": "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\StudentsFromHell.Lib\\Academy.Lib.csproj",
         "packagesPath": "C:\\Users\\formacio\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\ConsoleApp2_oop_Solution_Completa\\StudentsFromHell.Lib\\obj\\",
+        "outputPath": "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\StudentsFromHell.Lib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\formacio\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\formacio\\source\\repos\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\1_ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
       "projectName": "ConsoleApp1",
-      "projectPath": "C:\\Users\\formacio\\source\\repos\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectPath": "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\1_ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
       "packagesPath": "C:\\Users\\formacio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\formacio\\source\\repos\\ConsoleApp1\\ConsoleApp1\\obj\\",
+      "outputPath": "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\1_ConsoleApp1\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\formacio\\AppData\\Roaming\\NuGet\\NuGet.Config",

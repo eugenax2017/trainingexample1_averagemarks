@@ -660,7 +660,7 @@
       ]
     },
     "System.Buffers/4.4.0": {
-      "sha512": "AwarXzzoDwX6BgrhjoJsk6tUezZEozOT5Y9QKF94Gl4JK91I4PIIBkBco9068Y9/Dra8Dkbie99kXB8+1BaYKw==",
+      "sha512": "Ii2bedd4HVzddupdU35n3ygohUPlNn7MDimBOYcwWNce2NizQ1fCSaQJY1Tzv80aMqOGpVcU4wZr/Xe50xcTwg==",
       "type": "package",
       "path": "system.buffers/4.4.0",
       "files": [
@@ -843,7 +843,7 @@
       ]
     },
     "System.Numerics.Vectors/4.4.0": {
-      "sha512": "UiLzLW+Lw6HLed1Hcg+8jSRttrbuXv7DANVj0DkL9g6EnnzbL75EB7EWsw5uRbhxd/4YdG8li5XizGWepmG3PQ==",
+      "sha512": "gdRrUJs1RrjW3JB5p82hYjA67xoeFLvh0SdSIWjTiN8qExlbFt/RtXwVYNc5BukJ/f9OKzQQS6gakzbJeHTqHg==",
       "type": "package",
       "path": "system.numerics.vectors/4.4.0",
       "files": [
@@ -960,20 +960,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\formacio\\.nuget\\packages\\": {}
+    "C:\\Users\\josef\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\Ejemplos Patrones\\3 EF Core with Repository Pattern\\Project\\Project.Lib.DA.EFCore\\Project.Lib.DAL.EFCore.csproj",
+      "projectUniqueName": "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\3 EF Core with Repository Pattern\\Project\\Project.Lib.DA.EFCore\\Project.Lib.DAL.EFCore.csproj",
       "projectName": "Project.Lib.DAL.EFCore",
-      "projectPath": "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\Ejemplos Patrones\\3 EF Core with Repository Pattern\\Project\\Project.Lib.DA.EFCore\\Project.Lib.DAL.EFCore.csproj",
-      "packagesPath": "C:\\Users\\formacio\\.nuget\\packages\\",
-      "outputPath": "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\Ejemplos Patrones\\3 EF Core with Repository Pattern\\Project\\Project.Lib.DA.EFCore\\obj\\",
+      "projectPath": "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\3 EF Core with Repository Pattern\\Project\\Project.Lib.DA.EFCore\\Project.Lib.DAL.EFCore.csproj",
+      "packagesPath": "C:\\Users\\josef\\.nuget\\packages\\",
+      "outputPath": "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\3 EF Core with Repository Pattern\\Project\\Project.Lib.DA.EFCore\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\formacio\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\josef\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
@@ -985,8 +992,8 @@
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\Ejemplos Patrones\\3 EF Core with Repository Pattern\\Project\\Project.Lib\\Project.Lib.csproj": {
-              "projectPath": "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\Ejemplos Patrones\\3 EF Core with Repository Pattern\\Project\\Project.Lib\\Project.Lib.csproj"
+            "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\3 EF Core with Repository Pattern\\Project\\Project.Lib\\Project.Lib.csproj": {
+              "projectPath": "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\3 EF Core with Repository Pattern\\Project\\Project.Lib\\Project.Lib.csproj"
             }
           }
         }

@@ -180,20 +180,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\formacio\\.nuget\\packages\\": {}
+    "C:\\Users\\josef\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\StudentsFromHell.Lib\\Academy.Lib.csproj",
+      "projectUniqueName": "C:\\Dev\\Training\\trainingexample1_averagemarks\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\StudentsFromHell.Lib\\Academy.Lib.csproj",
       "projectName": "Academy.Lib",
-      "projectPath": "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\StudentsFromHell.Lib\\Academy.Lib.csproj",
-      "packagesPath": "C:\\Users\\formacio\\.nuget\\packages\\",
-      "outputPath": "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\StudentsFromHell.Lib\\obj\\",
+      "projectPath": "C:\\Dev\\Training\\trainingexample1_averagemarks\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\StudentsFromHell.Lib\\Academy.Lib.csproj",
+      "packagesPath": "C:\\Users\\josef\\.nuget\\packages\\",
+      "outputPath": "C:\\Dev\\Training\\trainingexample1_averagemarks\\7_ConsoleApp2_oop_Solution_Parcial3_Repositories\\StudentsFromHell.Lib\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\formacio\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\josef\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"

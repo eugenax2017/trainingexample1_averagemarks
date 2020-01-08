@@ -1,21 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Common.Lib.DAL.EFCore\\Common.Lib.DAL.EFCore.csproj": {}
+    "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Common.Lib.DAL.EFCore\\Common.Lib.DAL.EFCore.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Common.Lib.DAL.EFCore\\Common.Lib.DAL.EFCore.csproj": {
+    "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Common.Lib.DAL.EFCore\\Common.Lib.DAL.EFCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Common.Lib.DAL.EFCore\\Common.Lib.DAL.EFCore.csproj",
+        "projectUniqueName": "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Common.Lib.DAL.EFCore\\Common.Lib.DAL.EFCore.csproj",
         "projectName": "Common.Lib.DAL.EFCore",
-        "projectPath": "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Common.Lib.DAL.EFCore\\Common.Lib.DAL.EFCore.csproj",
-        "packagesPath": "C:\\Users\\formacio\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Common.Lib.DAL.EFCore\\obj\\",
+        "projectPath": "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Common.Lib.DAL.EFCore\\Common.Lib.DAL.EFCore.csproj",
+        "packagesPath": "C:\\Users\\josef\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Common.Lib.DAL.EFCore\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\formacio\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\josef\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -27,8 +32,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj": {
-                "projectPath": "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj"
+              "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj": {
+                "projectPath": "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj"
               }
             }
           }
@@ -42,6 +47,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -63,18 +72,23 @@
         }
       }
     },
-    "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj": {
+    "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj",
+        "projectUniqueName": "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj",
         "projectName": "Common.Lib",
-        "projectPath": "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj",
-        "packagesPath": "C:\\Users\\formacio\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\obj\\",
+        "projectPath": "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj",
+        "packagesPath": "C:\\Users\\josef\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\formacio\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\josef\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"

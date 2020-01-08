@@ -15,6 +15,11 @@ namespace Common.Lib.DAL.EFCore
             throw new NotImplementedException();
         }
 
+        public DeleteResult<T> Delete(T entity)
+        {
+            throw new NotImplementedException();
+        }
+
         public T Find(Guid id)
         {
             throw new NotImplementedException();

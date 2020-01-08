@@ -1,6 +1,7 @@
 ﻿using Common.Lib.Core;
 using Common.Lib.Core.Context;
 using Common.Lib.Infrastructure;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
 
@@ -8,27 +9,109 @@ namespace Common.Lib.DAL.EFCore
 {
     public class ServerRepository<T> : IRepository<T> where T : Entity
     {
-        public virtual SaveResult<T> Add(T entity)
-        {
+        DbContext DbContext { get; set; }
 
-            // creo una conexión contra la DB guardo la entity y le devuelvo 
-            // a quien me haya hecho la llamada
-            throw new NotImplementedException();
+        DbSet<T> DbSet
+        {
+            get
+            {
+                return DbContext.Set<T>();
+            }
         }
 
-        public T Find(Guid id)
+        public ServerRepository()
         {
-            throw new NotImplementedException();
+
+        }
+
+        public ServerRepository(DbContext context)
+        {
+            DbContext = context;
         }
 
         public IQueryable<T> QueryAll()
         {
-            throw new NotImplementedException();
+            return DbSet.AsQueryable();
+        }
+        public T Find(Guid id)
+        {
+            return DbSet.Find(id);
         }
 
-        public SaveResult<T> Update(T entity)
+        public virtual SaveResult<T> Add(T entity)
         {
-            throw new NotImplementedException();
+            // creo una conexión contra la DB guardo la entity y le devuelvo 
+            // a quien me haya hecho la llamada
+            var output = new SaveResult<T>
+            {
+                IsSuccess = true
+            };
+
+            if (entity.Id == default(Guid))
+                entity.Id = Guid.NewGuid();
+
+            if (DbSet.Any(x => x.Id == entity.Id))
+            {
+                output.IsSuccess = false;
+                output.Validation.Errors.Add("Ya existe una entity con ese id");
+            }
+
+            if (output.IsSuccess)
+            {
+                DbSet.Add(entity);
+                DbContext.SaveChanges();
+            }
+
+            return output;
+        }
+
+        public virtual SaveResult<T> Update(T entity)
+        {
+            var output = new SaveResult<T>
+            {
+                IsSuccess = true
+            };
+
+            if (entity.Id == default(Guid))
+            {
+                output.IsSuccess = false;
+                output.Validation.Errors.Add("No se puede actualizar una entidad sin Id");
+            }
+
+            //if (entity.Id != default(Guid) && !DbSet.Any(x => x.Id == entity.Id))
+            if (entity.Id != default(Guid) && DbSet.All(x => x.Id != entity.Id)) // esta es mejor porque tiene mejor performance
+            {
+                output.IsSuccess = false;
+                output.Validation.Errors.Add("No existe una entity con ese id");
+            }
+
+            if (output.IsSuccess)
+            {
+                DbSet.Update(entity);
+            }
+
+            return output;
+        }
+
+        public virtual DeleteResult<T> Delete(T entity)
+        {
+            var output = new DeleteResult<T>()
+            {
+                IsSuccess = true
+            };
+
+            if (DbSet.All(x => x.Id != entity.Id))
+            {
+                output.IsSuccess = false;
+                output.Validation.Errors.Add("No existe una entity con ese id");
+            }
+
+            if (output.IsSuccess)
+            {
+                DbSet.Remove(entity);
+            }
+
+            return output;
         }
     }
 }

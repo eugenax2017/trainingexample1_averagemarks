@@ -64,5 +64,10 @@ namespace Common.Lib.Core.Context
 
             return output;
         }
+
+        public DeleteResult<T> Delete(T entity)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

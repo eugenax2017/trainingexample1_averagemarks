@@ -1,21 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj": {}
+    "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj": {
+    "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj",
+        "projectUniqueName": "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj",
         "projectName": "Common.Lib",
-        "projectPath": "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj",
-        "packagesPath": "C:\\Users\\formacio\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\NetExamples\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\obj\\",
+        "projectPath": "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj",
+        "packagesPath": "C:\\Users\\josef\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\formacio\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\josef\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"

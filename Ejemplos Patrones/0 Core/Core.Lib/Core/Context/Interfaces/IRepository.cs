@@ -4,6 +4,10 @@ using System.Linq;
 
 namespace Common.Lib.Core.Context
 {
+    /// <summary>
+    /// Basic CRUD methods 
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public interface IRepository<T> where T : Entity
     {
         IQueryable<T> QueryAll();
@@ -13,5 +17,7 @@ namespace Common.Lib.Core.Context
         SaveResult<T> Add(T entity);
 
         SaveResult<T> Update(T entity);
+
+        DeleteResult<T> Delete(T entity);
     }
 }

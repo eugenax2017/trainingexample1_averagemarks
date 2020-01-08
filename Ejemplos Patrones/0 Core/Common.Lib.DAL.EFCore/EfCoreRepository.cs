@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace Common.Lib.DAL.EFCore
 {
-    public class ServerRepository<T> : IRepository<T> where T : Entity
+    public class EfCoreRepository<T> : IRepository<T> where T : Entity
     {
         DbContext DbContext { get; set; }
 
@@ -19,12 +19,12 @@ namespace Common.Lib.DAL.EFCore
             }
         }
 
-        public ServerRepository()
+        public EfCoreRepository()
         {
 
         }
 
-        public ServerRepository(DbContext context)
+        public EfCoreRepository(DbContext context)
         {
             DbContext = context;
         }

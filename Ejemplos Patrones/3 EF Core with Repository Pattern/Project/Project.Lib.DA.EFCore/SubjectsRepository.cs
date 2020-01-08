@@ -1,4 +1,5 @@
 ﻿using Common.Lib.Core.Context;
+using Common.Lib.DAL.EFCore;
 using Common.Lib.Infrastructure;
 using Project.Lib.Context;
 using Project.Lib.DAL.EFCore.Context;
@@ -10,7 +11,7 @@ using System.Text;
 
 namespace Project.Lib.DAL.EFCore
 {
-    public class SubjectsRepository : GenericRepository<Subject>, ISubjectsRepository
+    public class SubjectsRepository : EfCoreRepository<Subject>, ISubjectsRepository
     {
         private static Dictionary<string, Subject> SubjectsByName { get; set; }
 

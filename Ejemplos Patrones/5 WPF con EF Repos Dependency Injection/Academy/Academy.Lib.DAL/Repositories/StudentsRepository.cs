@@ -8,7 +8,7 @@ using System.Text;
 
 namespace Academy.Lib.DAL.Repositories
 {
-    public class StudentsRepository : ServerRepository<Student>, IStudentsRepository
+    public class StudentsRepository : EfCoreRepository<Student>, IStudentsRepository
     {
         static Dictionary<string, Student> StudentsByDni { get; set; } = new Dictionary<string, Student>();
 

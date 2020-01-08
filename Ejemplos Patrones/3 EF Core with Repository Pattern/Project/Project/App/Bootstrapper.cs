@@ -1,4 +1,5 @@
 ﻿using Common.Lib.Core.Context;
+using Common.Lib.DAL.EFCore;
 using Common.Lib.Infrastructure;
 using Project.Lib.Context;
 using Project.Lib.DAL.EFCore;
@@ -24,14 +25,14 @@ namespace Project.Web.App
         {
             var studentRepoBuilder = new Func<object[], object>((parameters) =>
             {
-                return new GenericRepository<Student>(dbContextConst());
+                return new EfCoreRepository<Student>(dbContextConst());
             }); 
             var subjectsRepoBuilder = new Func<object[], object>((parameters) =>
             {
                 return new SubjectsRepository(dbContextConst());
             });
 
-            dp.Register<IRepository<Student>, GenericRepository<Student>>(studentRepoBuilder);
+            dp.Register<IRepository<Student>, EfCoreRepository<Student>>(studentRepoBuilder);
 
             dp.Register<IRepository<Subject>, SubjectsRepository>(subjectsRepoBuilder);
             dp.Register<ISubjectsRepository, SubjectsRepository>(subjectsRepoBuilder);

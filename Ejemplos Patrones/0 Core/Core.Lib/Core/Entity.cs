@@ -41,6 +41,24 @@ namespace Common.Lib.Core
             return output;
         }
 
+        public virtual DeleteResult<T> Delete<T>() where T : Entity
+        {
+            var output = new DeleteResult<T>();
+
+            CurrentValidation = Validate();
+
+            if (CurrentValidation.IsSuccess)
+            {
+                var repo = DepCon.Resolve<IRepository<T>>();
+                
+                output = repo.Delete(this as T);
+            }
+
+            output.Validation = CurrentValidation;
+
+            return output;
+        }
+
         public virtual ValidationResult Validate()
         {
             var output = new ValidationResult()
@@ -48,6 +66,13 @@ namespace Common.Lib.Core
                 IsSuccess = true
             };
 
+            return output;
+        }
+
+        public virtual T Clone<T>() where T : Entity, new()
+        {
+            var output = new T();
+            output.Id = this.Id;
             return output;
         }
     }

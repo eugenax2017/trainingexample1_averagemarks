@@ -12,6 +12,8 @@
 1) Solucion y proyectos
    Academy.Lib -> Common.Lib.dll
    Academy.Lib.DAL -> Entity Framework Core(nuget),
+	  	      Microsoft.Extensions.Configuration.FileExtensions(nuget),
+		      Microsoft.Extensions.Configuration.Json (nuget),
                       Common.Lib.dll, 
                       Common.Lib.DAL.EFCore.dll, 
                       Academy.Lib (project)

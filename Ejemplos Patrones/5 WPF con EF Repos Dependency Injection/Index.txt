@@ -10,15 +10,25 @@
    una aplicación que es a la vez cliente y servidor
    
 1) Solucion y proyectos
-   Academy.Lib
-   Academy.Lib.DAL
-   Academy.App.WPF
+   Academy.Lib -> Common.Lib.dll
+   Academy.Lib.DAL -> Entity Framework Core(nuget),
+                      Common.Lib.dll, 
+                      Common.Lib.DAL.EFCore.dll, 
+                      Academy.Lib (project)
+   Academy.App.WPF -> Entity Framework Core(nuget),
+                      Entity Framework Core SQLite(nuget),
+                      Entity Framework Core Tools(nuget),
+                      Common.Lib.dll, 
+                      Common.Lib.DAL.EFCore.dll, 
+                      Academy.Lib (project),
+		      Academy.Lib.DAL
 
 2) Modelos
    Students
    Subjects
    Exams
    StudentExams
+   StudentSubjects
 
 3) DbContext
 

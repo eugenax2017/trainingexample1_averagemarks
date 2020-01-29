@@ -53,3 +53,14 @@ C:\Dev\Training\trainingexample1_averagemarks\Ejemplos Patrones\0 Core\Common.Li
 C:\Dev\Training\trainingexample1_averagemarks\Ejemplos Patrones\0 Core\Common.Lib.DAL.EFCore\obj\Debug\netstandard2.0\Common.Lib.DAL.EFCore.csproj.CopyComplete
 C:\Dev\Training\trainingexample1_averagemarks\Ejemplos Patrones\0 Core\Common.Lib.DAL.EFCore\obj\Debug\netstandard2.0\Common.Lib.DAL.EFCore.dll
 C:\Dev\Training\trainingexample1_averagemarks\Ejemplos Patrones\0 Core\Common.Lib.DAL.EFCore\obj\Debug\netstandard2.0\Common.Lib.DAL.EFCore.pdb
+C:\Users\formacio\Desktop\Evgenii\trainingexample1_averagemarks\Ejemplos Patrones\0 Core\Common.Lib.DAL.EFCore\bin\Debug\netstandard2.0\Common.Lib.DAL.EFCore.deps.json
+C:\Users\formacio\Desktop\Evgenii\trainingexample1_averagemarks\Ejemplos Patrones\0 Core\Common.Lib.DAL.EFCore\bin\Debug\netstandard2.0\Common.Lib.DAL.EFCore.dll
+C:\Users\formacio\Desktop\Evgenii\trainingexample1_averagemarks\Ejemplos Patrones\0 Core\Common.Lib.DAL.EFCore\bin\Debug\netstandard2.0\Common.Lib.DAL.EFCore.pdb
+C:\Users\formacio\Desktop\Evgenii\trainingexample1_averagemarks\Ejemplos Patrones\0 Core\Common.Lib.DAL.EFCore\bin\Debug\netstandard2.0\Common.Lib.dll
+C:\Users\formacio\Desktop\Evgenii\trainingexample1_averagemarks\Ejemplos Patrones\0 Core\Common.Lib.DAL.EFCore\bin\Debug\netstandard2.0\Common.Lib.pdb
+C:\Users\formacio\Desktop\Evgenii\trainingexample1_averagemarks\Ejemplos Patrones\0 Core\Common.Lib.DAL.EFCore\obj\Debug\netstandard2.0\Common.Lib.DAL.EFCore.csprojAssemblyReference.cache
+C:\Users\formacio\Desktop\Evgenii\trainingexample1_averagemarks\Ejemplos Patrones\0 Core\Common.Lib.DAL.EFCore\obj\Debug\netstandard2.0\Common.Lib.DAL.EFCore.AssemblyInfoInputs.cache
+C:\Users\formacio\Desktop\Evgenii\trainingexample1_averagemarks\Ejemplos Patrones\0 Core\Common.Lib.DAL.EFCore\obj\Debug\netstandard2.0\Common.Lib.DAL.EFCore.AssemblyInfo.cs
+C:\Users\formacio\Desktop\Evgenii\trainingexample1_averagemarks\Ejemplos Patrones\0 Core\Common.Lib.DAL.EFCore\obj\Debug\netstandard2.0\Common.Lib.DAL.EFCore.csproj.CopyComplete
+C:\Users\formacio\Desktop\Evgenii\trainingexample1_averagemarks\Ejemplos Patrones\0 Core\Common.Lib.DAL.EFCore\obj\Debug\netstandard2.0\Common.Lib.DAL.EFCore.dll
+C:\Users\formacio\Desktop\Evgenii\trainingexample1_averagemarks\Ejemplos Patrones\0 Core\Common.Lib.DAL.EFCore\obj\Debug\netstandard2.0\Common.Lib.DAL.EFCore.pdb

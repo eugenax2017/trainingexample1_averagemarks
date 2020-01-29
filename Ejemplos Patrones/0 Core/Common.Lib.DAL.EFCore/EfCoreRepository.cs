@@ -88,6 +88,7 @@ namespace Common.Lib.DAL.EFCore
             if (output.IsSuccess)
             {
                 DbSet.Update(entity);
+                DbContext.SaveChanges();
             }
 
             return output;
@@ -109,6 +110,7 @@ namespace Common.Lib.DAL.EFCore
             if (output.IsSuccess)
             {
                 DbSet.Remove(entity);
+                DbContext.SaveChanges();
             }
 
             return output;

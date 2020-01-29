@@ -1,26 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj": {}
+    "C:\\Users\\formacio\\Desktop\\Evgenii\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj": {
+    "C:\\Users\\formacio\\Desktop\\Evgenii\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj",
+        "projectUniqueName": "C:\\Users\\formacio\\Desktop\\Evgenii\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj",
         "projectName": "Common.Lib",
-        "projectPath": "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj",
-        "packagesPath": "C:\\Users\\josef\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\Training\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\obj\\",
+        "projectPath": "C:\\Users\\formacio\\Desktop\\Evgenii\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\Common.Lib.csproj",
+        "packagesPath": "C:\\Users\\formacio\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\formacio\\Desktop\\Evgenii\\trainingexample1_averagemarks\\Ejemplos Patrones\\0 Core\\Core.Lib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\josef\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\formacio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -60,7 +58,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

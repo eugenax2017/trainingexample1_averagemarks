@@ -34,3 +34,10 @@ C:\Dev\Training\trainingexample1_averagemarks\Ejemplos Patrones\0 Core\Core.Lib\
 C:\Dev\Training\trainingexample1_averagemarks\Ejemplos Patrones\0 Core\Core.Lib\obj\Debug\netstandard2.0\Common.Lib.dll
 C:\Dev\Training\trainingexample1_averagemarks\Ejemplos Patrones\0 Core\Core.Lib\obj\Debug\netstandard2.0\Common.Lib.pdb
 C:\Dev\Training\trainingexample1_averagemarks\Ejemplos Patrones\0 Core\Core.Lib\obj\Debug\netstandard2.0\Common.Lib.csprojAssemblyReference.cache
+C:\Users\formacio\Desktop\Evgenii\trainingexample1_averagemarks\Ejemplos Patrones\0 Core\Core.Lib\bin\Debug\netstandard2.0\Common.Lib.deps.json
+C:\Users\formacio\Desktop\Evgenii\trainingexample1_averagemarks\Ejemplos Patrones\0 Core\Core.Lib\bin\Debug\netstandard2.0\Common.Lib.dll
+C:\Users\formacio\Desktop\Evgenii\trainingexample1_averagemarks\Ejemplos Patrones\0 Core\Core.Lib\bin\Debug\netstandard2.0\Common.Lib.pdb
+C:\Users\formacio\Desktop\Evgenii\trainingexample1_averagemarks\Ejemplos Patrones\0 Core\Core.Lib\obj\Debug\netstandard2.0\Common.Lib.AssemblyInfoInputs.cache
+C:\Users\formacio\Desktop\Evgenii\trainingexample1_averagemarks\Ejemplos Patrones\0 Core\Core.Lib\obj\Debug\netstandard2.0\Common.Lib.AssemblyInfo.cs
+C:\Users\formacio\Desktop\Evgenii\trainingexample1_averagemarks\Ejemplos Patrones\0 Core\Core.Lib\obj\Debug\netstandard2.0\Common.Lib.dll
+C:\Users\formacio\Desktop\Evgenii\trainingexample1_averagemarks\Ejemplos Patrones\0 Core\Core.Lib\obj\Debug\netstandard2.0\Common.Lib.pdb
